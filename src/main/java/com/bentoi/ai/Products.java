@@ -10,10 +10,10 @@ import javax.persistence.Table;
 public class Products {
 	
 	@Id
-	@GeneratedValue
+//	@GeneratedValue
 	private String name;
 	private String description;
-	private Float price;
+	private Double price;
 	private String categorypath;
 	private Boolean available;
 	
@@ -36,10 +36,10 @@ public class Products {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Float getPrice() {
+	public Double getPrice() {
 		return price;
 	}
-	public void setPrice(Float price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	public String getCategorypath() {

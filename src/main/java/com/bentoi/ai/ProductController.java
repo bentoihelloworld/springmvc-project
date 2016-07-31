@@ -23,11 +23,23 @@ public class ProductController {
 
 
 
-	@RequestMapping("/product")
+	@RequestMapping("/add")
+	public ModelAndView addProducts() {
+		System.out.println("in controller");
+		
+		ModelAndView mv = new ModelAndView("addproduct");
+		mv.addObject("productDao",  new ProductDao());
+		mv.addObject("prdct", new Products());
+		return mv;
+	}
+	
+	@RequestMapping("/list")
 	public ModelAndView showProducts() {
 		System.out.println("in controller");
-
-		return new ModelAndView("products", "productDao", new ProductDao());
+		
+		ModelAndView mv = new ModelAndView("products");
+		mv.addObject("productDao",  new ProductDao());
+		return mv;
 	}
 
 }
