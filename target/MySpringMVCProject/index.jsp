@@ -5,14 +5,17 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring 4 MVC - HelloWorld Index Page</title>
+<title>Spring 4 MVC - JPA</title>
 </head>
 <body>
  
 	<center>
-		<h2>Hello World</h2>
+		<h2>Products</h2>
 		<h3>
-			<a href="hello?name=Bentoi">Click Here</a>
+			<a href="list">Click Here to generate product list</a>
+		</h3>
+			<h3>
+			<a href="add">Add product list</a>
 		</h3>
 	</center>
 </body>

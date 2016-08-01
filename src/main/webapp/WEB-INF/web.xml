@@ -3,7 +3,7 @@
  
  
 	<display-name>Archetype Created Web Application</display-name>
- 
+ <!-- Configuration for the DispatcherServlet -->
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>
@@ -16,15 +16,15 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
- 
-<!-- 	<context-param>
+	
+  <!-- Configuration file for the root application context -->
+	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
-	</context-param> -->
- 
-<!-- 	<listener>
+	</context-param>
+	<listener>
 		<listener-class>
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
-	</listener> -->
+	</listener>
 </web-app>

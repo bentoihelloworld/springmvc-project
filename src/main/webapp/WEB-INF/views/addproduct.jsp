@@ -15,7 +15,6 @@
 
 <body>
 
-
 	<% prdct.setName("Lilys"); %>
 	<% prdct.setDescription("Peanut butter"); %>
 	<% prdct.setPrice(75.56); %>

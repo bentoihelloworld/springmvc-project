@@ -1,1 +1,5 @@
+com\bentoi\ai\db\PersistenceManager.class
 com\bentoi\ai\ProductController.class
+com\bentoi\ai\ProductDao.class
+com\bentoi\ai\model\Products.class
+com\bentoi\ai\ProductDaoImpl.class
