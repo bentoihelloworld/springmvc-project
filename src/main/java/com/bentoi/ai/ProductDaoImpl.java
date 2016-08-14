@@ -17,7 +17,7 @@ public class ProductDaoImpl implements ProductDao {
 	
 	@PersistenceContext
 	private EntityManager em;
-
+	
 	public List<Products> getAllProducts() {
 
 		TypedQuery<Products> query = em.createQuery("SELECT p FROM Products p ORDER BY p.id", Products.class);
@@ -30,10 +30,8 @@ public class ProductDaoImpl implements ProductDao {
 
 		// Boolean isDataAdded = false;
 		try {
-			em.getTransaction().begin();
 			em.persist(Prdct);
-			em.getTransaction().commit();
-
+		
 			// isDataAdded = true;
 		} catch (Exception e) {
 			System.out.println("error when committing transaction: " + e.getMessage());
