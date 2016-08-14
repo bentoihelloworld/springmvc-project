@@ -4,7 +4,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page import="com.bentoi.ai.*"%>
 
-<%-- <jsp:useBean id="productDao" type="com.bentoi.ai.ProductDao" scope="request" /> --%>
 <!-- <link type="text/css" href="/resources/css/table.css" rel="stylesheet" media="all" /> -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">

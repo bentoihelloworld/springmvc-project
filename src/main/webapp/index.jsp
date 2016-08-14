@@ -12,7 +12,7 @@ pageEncoding="ISO-8859-1"%>
 	<center>
 		<h2>Products</h2>
 		<h3>
-			<a href="list-product">Click Here to generate product list</a>
+			<a href="product-module/list">Click Here to generate product list</a>
 		</h3>
 			<h3>
 			<a href="add">Add product list</a>

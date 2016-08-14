@@ -4,12 +4,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 import com.bentoi.ai.ProductDao;
 import com.bentoi.ai.model.Products;
@@ -35,24 +32,20 @@ public class ProductController {
 
 	/**
 	 * Bind all product list
-	 */	
+	 */
 	@ModelAttribute("listProducts")
 	public List<Products> listProduct() {
 		List<Products> prodList = product.getAllProducts();
 		return prodList;
 	}
 
-
 	/**
 	 * Method will be called in initial page load at GET /product-module
 	 */
 	@RequestMapping("/list")
-	public String showProducts(Model model) {
+	public ModelAndView showProducts() {
 		System.out.println("in controller");
-		Products prdct = new Products();
-		model.addAttribute("list", prdct);
-		return "products";
+		return new ModelAndView("products");
 	}
-
 
 }
